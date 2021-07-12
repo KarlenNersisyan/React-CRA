@@ -1,5 +1,26 @@
-.weatherListContainer {
+body {
+  background: aquamarine;
+  text-align: center;
+}
+h1 {
+  color: rgba(195, 54, 207, 0.829);
+  font-size: 65px;
+}
+.WeatherListContainer {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+.dayWeather {
+  width: 200px;
+  cursor: pointer;
+  background-color: aliceblue;
+  border: 1px solid grey;
+  transition: 0.3s;
+}
+.dayWeather:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px rgb(0, 0, 0);
 }

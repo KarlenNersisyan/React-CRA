@@ -6,19 +6,24 @@ import cloudyImg from "./assets/img/17.svg";
 
 const weatherInfo = [
   {
-    weekday: "Tuesday",
-    imgURL: halfSun,
-    temp: "32C",
-  },
-  {
     weekday: "Monday",
     imgURL: sunImg,
     temp: "36C",
   },
   {
-    weekday: "Wednesday",
+    weekday: "Tuesday",
     imgURL: halfSun,
+    temp: "32C",
+  },
+  {
+    weekday: "Wednesday",
+    imgURL: sunImg,
     temp: "35C",
+  },
+  {
+    weekday: "Thursday",
+    imgURL: halfSun,
+    temp: "45C",
   },
 
   {
@@ -27,38 +32,33 @@ const weatherInfo = [
     temp: "36C",
   },
   {
-    weekday: "Thursday",
-    imgURL: halfSun,
-    temp: "45C",
+    weekday: "Saturday",
+    imgURL: cloudyImg,
+    temp: "37C",
   },
   {
     weekday: "Sunday",
-    imgURL: cloudyImg,
+    imgURL:lightningImg,
     temp: "39C",
-  },
-  {
-    weekday: "Saturday",
-    imgURL: lightningImg,
-    temp: "37C",
   },
 ];
 
 function Image(props) {
-  return <img src={props.src} alt={props.alt} />;
+  return <img src={props.src} alt={props.alt} width={props.width} />;
 }
 
 function WeatherList(props) {
   return (
     <div className="dayWeather">
-      <h1>{props.weekday}</h1>
-      <Image src={props.imgURL} alt="weather" />
+      <h3>{props.weekday}</h3>
+      <Image src={props.imgURL} alt="weather" width="40%" />
       <p>{props.temp}</p>
     </div>
   );
 }
 
 function App() {
-  let weather = weatherInfo.map((el) => {
+  const weather = weatherInfo.map((el) => {
     return (
       <WeatherList weekday={el.weekday} imgURL={el.imgURL} temp={el.temp} />
     );
