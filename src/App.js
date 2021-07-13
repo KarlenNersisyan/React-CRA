@@ -5,38 +5,41 @@ import lightningImg from "./assets/img/09.svg";
 import cloudyImg from "./assets/img/17.svg";
 
 const weatherInfo = [
-  {
+  { id:1,
     weekday: "Monday",
     imgURL: sunImg,
     temp: "36C",
   },
-  {
+  { id:2,
     weekday: "Tuesday",
     imgURL: halfSun,
     temp: "32C",
   },
-  {
+  { id:3,
     weekday: "Wednesday",
     imgURL: sunImg,
     temp: "35C",
   },
-  {
+  { id:4,
     weekday: "Thursday",
     imgURL: halfSun,
     temp: "45C",
   },
 
-  {
+  { 
+    id:5,
     weekday: "Friday",
     imgURL: lightningImg,
     temp: "36C",
   },
-  {
+  { 
+    id:6,
     weekday: "Saturday",
     imgURL: cloudyImg,
     temp: "37C",
   },
-  {
+  { 
+    id:7,
     weekday: "Sunday",
     imgURL:lightningImg,
     temp: "39C",
@@ -60,7 +63,7 @@ function WeatherList(props) {
 function App() {
   const weather = weatherInfo.map((el) => {
     return (
-      <WeatherList weekday={el.weekday} imgURL={el.imgURL} temp={el.temp} />
+      <WeatherList key={el.id} weekday={el.weekday} imgURL={el.imgURL} temp={el.temp} />
     );
   });
 
