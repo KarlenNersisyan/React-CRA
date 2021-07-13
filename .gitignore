@@ -11,6 +11,10 @@
 # production
 /build
 
+# reportWebVitals
+
+/src/reportWebVitals
+
 #editor
 .vscode
 

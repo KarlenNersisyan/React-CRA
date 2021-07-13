@@ -17,6 +17,10 @@
     "import/no-unresolved": "off",
     "import/extensions": "off",
     "linebreak-style": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/prop-types": "off",
+
+    "react/react-in-jsx-scope": "off",
+    "arrow-parens": "off",
+    "object-curly-newline": "off"
   }
 }
