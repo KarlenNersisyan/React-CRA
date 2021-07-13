@@ -27,7 +27,7 @@
     "rules": {
       "react/react-in-jsx-scope": "off",
       "react/prop-types": "off",
-      "react/key": ""
+      "react/key": 2
     },
     "ignorePatterns": [
       "src/reportWebVitals.js",
