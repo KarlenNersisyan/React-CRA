@@ -26,8 +26,7 @@
     ],
     "rules": {
       "react/react-in-jsx-scope": "off",
-      "react/prop-types": "off",
-      "react/key": 2
+      "react/prop-types": "off"
     },
     "ignorePatterns": [
       "src/reportWebVitals.js",
