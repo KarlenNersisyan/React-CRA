@@ -1,39 +1,39 @@
-import * as Icons from "../components/Icons/Icons";
+import * as Icons from '../components/Icons/Icons';
 
 export default [
   {
-    weekDey: "Monday",
+    weekDey: 'Monday',
     icon: Icons.RainyWeather,
-    temp: "36C",
+    temp: '36C',
   },
   {
-    weekDey: "Tuesday",
+    weekDey: 'Tuesday',
     icon: Icons.RainyWeather,
-    temp: "32C",
+    temp: '32C',
   },
   {
-    weekDey: "Wednesday",
+    weekDey: 'Wednesday',
     icon: Icons.RainyWeather,
-    temp: "35C",
+    temp: '35C',
   },
   {
-    weekDey: "Thursday",
+    weekDey: 'Thursday',
     icon: Icons.SunnyWeather,
-    temp: "45C",
+    temp: '45C',
   },
   {
-    weekDey: "Friday",
+    weekDey: 'Friday',
     icon: Icons.RainyWeather,
-    temp: "36C",
+    temp: '36C',
   },
   {
-    weekDey: "Saturday",
+    weekDey: 'Saturday',
     icon: Icons.RainyWeather,
-    temp: "37C",
+    temp: '37C',
   },
   {
-    weekDey: "Sunday",
+    weekDey: 'Sunday',
     icon: Icons.RainyWeather,
-    temp: "39C",
+    temp: '39C',
   },
 ];
