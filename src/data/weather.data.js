@@ -3,7 +3,7 @@ import * as Icons from '../components/Icons/Icons';
 export default [
   {
     weekDey: 'Monday',
-    icon: Icons.RainyWeather,
+    icon: Icons.SunnyWeather,
     temp: '36C',
   },
   {
@@ -23,7 +23,7 @@ export default [
   },
   {
     weekDey: 'Friday',
-    icon: Icons.RainyWeather,
+    icon: Icons.CloudyWeather,
     temp: '36C',
   },
   {
@@ -33,7 +33,7 @@ export default [
   },
   {
     weekDey: 'Sunday',
-    icon: Icons.RainyWeather,
+    icon: Icons.CloudyWeather,
     temp: '39C',
   },
 ];
