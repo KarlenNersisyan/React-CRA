@@ -3,7 +3,8 @@
     "browser": true,
     "es2020": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb-base"],
+  "extends": ["react-app", "react-app/jest", "eslint-config-airbnb"],
+  "ignorePatterns": ["src/reportWebVitals.js", "src/setupTests.js"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
